@@ -1,0 +1,240 @@
+NEED TO LEARN TYPESCRIPT AFTER YPU COMPLETE MERN STACK.
+
+Introduction
+.............
+
+JS is a single threaded(one work at a time), 
+synchronous(after line 1, line 2 will execute and so on), 
+blocking(ex: before line 4, line 1, 2 and 3 should be executed. That means, if 1st line shows error, the other lines will not execute) language.
+semicolon is not needed in js.
+
+Javascript is loosely typed(dynamic) language. This means that, when we define a variable, we can later on change it to string boolean 
+if it was initially a number.
+eg:
+let a=3
+a=4
+a="Anjali"
+a=true
+This will give the output as true, which is in the form of boolean. It is easy to change the value of variable in js unlike 'C', which is a tight 
+typed language.
+
+
+Javascript is a case-sensitive language. For eg, in 'console.log', error will be shown if the letter c is capital.
+
+Operator in js
+...............
+
++, -, *, / and % . These are the arithmetic operators.
+
++ Operator in js
+.................
+
++ Operators in js are those which works for number and string.
+
+ 1+1 = 2
+ "1" + "2" = "12"
+ "ab" + "ab" = abab
+ "Anjali"+ "Karna" = AnjaliKarna
+ "Anjali" + " " + "Karna" = Anjali Karna
+
+ If there is war between number and string, always string wins in the + operation. ex: "1" + 2 = "12" 
+
+ Every time, the execution for + operator takes place only two at a time. So, whenever there are two or more numbers, the first two will be added 
+ first and then the next and so on.
+
+ ex:
+
+ 1+2+"3"+2+2
+ For this, the operation will take place as follows:
+3+"3"+2+2
+"33" + 2+2
+"332" +2
+"3322"
+
+So, the output will be "3322" which will always be in string and in doubles quotations as the string wins.
+
+
+Variables
+..........
+
+Define Variable
+................
+For defining the variable, we use 'let'
+Variables are never quoted in double quotes, and they should always be defined before being called. 
+
+let name = "Anjali"
+let age = 22
+let isMarried = false 
+
+Calling variable
+console.log (name)
+console.log (age)
+console.log (isMarried)
+
+Change Variable
+...............
+
+name = "Niki"
+age = 23
+
+console.log(name)
+console.log(age)
+console.log(isMarried)
+
+// add, sub, multi, div 
+
+let a=1
+let b=2
+
+let c=a+b
+let d=a*b
+let e=b/a
+let f=b-a
+
+console.log (c,d,e,f) [This is to be done when we need to calculate all the values in one console]
+
+% (modulo/remainder/percentile operator)
+
+It provides the remainder for a calculation.
+ 4%3 = 1
+ 14%5 = 4
+
+Comparative operator
+--------------------
+
+===, !==, >, <, <=, >=
+
+
+console.log (3===1)  false
+console.log (1===1)  true
+
+console.log (3!==1)  true
+console.log (1!==1)  false
+
+console.log (1>2)    false
+console.log (2>1)    true
+ 
+console.log (1>=1)  true
+
+Logical Operator
+----------------
+
+&&, ||, !
+
+&& -> for true, all should be true
+|| -> for true, one should be true
+
+
+//And Operator
+
+console.log(true&&false&&true&&false) //false
+console.log(false&&false&&false) //false
+console.log(false&&false&&false&&true)  //false
+console.log(true&&true&&true&&true) //true
+
+//Or operator
+console.log(true||false||true||false)  //true
+console.log(false||false||false) //false
+console.log(false||false||false||true) //true
+console.log(true||true||true||true) //true
+
+
+// Not operator (!)
+
+console.log (!false) //true
+console.log (!true) //false
+
+Assignment Operator (=, +=, -=, *=)
+------------------------------------
+
+let a= 1
+let b= 2
+b+=a //b=b+a //use of "+="
+console.log (b)
+
+
+Rules to define variable
+-------------------------
+
+1. Name must be descriptive. That means, when we are assigning numbers, use num instead of a or b
+
+let num1 = 3
+let num2 = 4
+let sum = num1+num2
+console.log (sum)
+
+2. Use camel case convention to define a variable
+This means that, if there are two or more words to be defining a variable, it should be written as follows,
+
+is he married = isHeMarried
+full name = fullName
+
+eg: let fullName = "Anjali Karna"
+
+Number Conversion
+------------------
+
+Converting string number to number
+-----------------------------------
+
+console.log(Number("1"))  [Converts "1" to 1]
+
+console.log(Number(false)) [Converts false to 0]
+
+console.log(Number(true))  [Converts true to 1]
+
+console.log(parseInt("3.45")) [Converts 3.45 to int value 3]
+console.log(parseInt("3.92")) [Converts 3.45 to int value 3]
+
+Converting number to string
+
+console.log(String(1))
+console.log(String(true))  [for string, the color will be white in vs code and for number and boolean it will be yellow.]
+
+Boolean Conversion
+------------------
+All empty are falsie and all other are true.
+For Number,
+For number, 0 is false and all are true.
+
+For String,
+For string, no space is false and all are true.
+
+eg: " " is true and "" is false 
+
+If else 
+---------
+
+
+Functions
+----------
+function has two parts.
+Function definition 
+Function call
+
+Function definition in js
+let sum = function()
+{
+    Console.log ("sum")
+}
+
+function Calling in js
+sum()
+
+Passing values in Function
+--------------------------
+let sum = function (a,b,c,d)
+{
+    console.log(a)
+    console.log(b)
+    console.log(c)
+    console.log(d)
+}
+
+sum (1, 2, 3, "fire") //passing the values in a, b, c, d
+
+push pop unshift shift
+--------------------------
+
+all array method returns something but push, pop, unshift and shift 
+method changes the original array.
